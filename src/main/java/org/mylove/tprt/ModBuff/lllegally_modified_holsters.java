@@ -31,8 +31,7 @@ public class lllegally_modified_holsters extends MobEffect {
             double NewAttackSpeed=  entity.getAttributeValue(Attributes.ATTACK_SPEED);
             double mid= OiMaths.PRIME.getPrime(bufnum);
             mid=Math.log10(mid)/ Math.log10(2.0);
-            NewAttackSpeed= NewAttackSpeed * mid;
-            AttributeInstance attackSpeedAttr = entity.getAttribute(Attributes.ATTACK_SPEED);
+            NewAttackSpeed= NewAttackSpeed * mid;          
             if(attackSpeedAttr!=null){
                 UUID NEW_SPEED_UUID = UUID.fromString("874C97BF-6CF1-4E95-88D7-2B9828B42A2A");
                 attackSpeedAttr.removeModifier(NEW_SPEED_UUID);
